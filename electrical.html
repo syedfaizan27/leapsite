@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Electrical Products - Cosmic Impex</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Outfit', sans-serif;
+      background: #f7f9fb;
+      color: #333;
+      line-height: 1.6;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+      background-image: url('industrial-electricals.webp');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      position: relative;
+    }
+    .container::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(247, 249, 251, 0.85);
+      z-index: 0;
+    }
+    .container > * {
+      position: relative;
+      z-index: 1;
+    }
+    header {
+      background: #FFFFFF;
+      padding: 20px 50px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    }
+    .logo img {
+      height: 80px;
+    }
+    h1 {
+      color: #CF0F47;
+      text-align: center;
+      margin: 40px 0;
+      font-size: 36px;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+    }
+    h2 {
+      color: #CF0F47;
+      margin: 30px 0 15px;
+      font-size: 28px;
+    }
+    h3 {
+      color: #CF0F47;
+      margin: 25px 0 10px;
+      font-size: 22px;
+    }
+    .product-card {
+      background: white;
+      border-radius: 8px;
+      padding: 25px;
+      margin-bottom: 30px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+      gap: 30px;
+      margin-top: 40px;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    li {
+      margin-bottom: 8px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 15px 0;
+    }
+    th, td {
+      padding: 12px;
+      text-align: left;
+      border-bottom: 1px solid #eee;
+    }
+    .contact-info {
+      background: #FFDEDE;
+      padding: 30px;
+      border-radius: 8px;
+      margin-top: 50px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="https://i.ibb.co/pr278jXK/no-bg-small-logo.png" alt="Cosmic Impex Enterprises Logo">
+    </div>
+    <nav>
+      <a href="index.html">← Back to Home</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h1>Electrical Products</h1>
+    <p style="text-align: center; max-width: 800px; margin: 0 auto 30px; background: rgba(255,255,255,0.8); padding: 15px; border-radius: 8px;">
+      We cater to various electrical engineering goods including cables, panels, and other products based on customer preferences and brand requirements.
+    </p>
+    </div>
+    <div class="product-grid">
+      <!-- Cables -->
+      <div class="product-card">
+        <h2>Copper Cables</h2>
+        <h3>Features:</h3>
+        <ul>
+          <li>High conductivity copper</li>
+          <li>Various gauges available</li>
+          <li>Insulated and non-insulated options</li>
+          <li>Custom lengths available</li>
+        </ul>
+        <h3>Applications:</h3>
+        <p>Electrical wiring, power distribution, industrial applications</p>
+      </div>
+
+      <!-- Distribution Panels -->
+      <div class="product-card">
+        <h2>Distribution Panels</h2>
+        <h3>Features:</h3>
+        <ul>
+          <li>Robust metal enclosures</li>
+          <li>Modular design</li>
+          <li>Circuit protection included</li>
+          <li>Custom configurations available</li>
+        </ul>
+        <h3>Applications:</h3>
+        <p>Power distribution in commercial and industrial settings</p>
+      </div>
+
+      <!-- Capacitors -->
+      <div class="product-card">
+        <h2>Capacitors</h2>
+        <h3>Features:</h3>
+        <ul>
+          <li>Various capacitance values</li>
+          <li>High voltage ratings</li>
+          <li>Long operational life</li>
+          <li>Compact designs</li>
+        </ul>
+        <h3>Applications:</h3>
+        <p>Power factor correction, motor starting, electronic circuits</p>
+      </div>
+
+      <!-- Multifunction Meters -->
+      <div class="product-card">
+        <h2>Multifunction Meters</h2>
+        <h3>Features:</h3>
+        <ul>
+          <li>Measure voltage, current, power, energy</li>
+          <li>Digital displays</li>
+          <li>Communication interfaces</li>
+          <li>Panel mount designs</li>
+        </ul>
+        <h3>Applications:</h3>
+        <p>Energy monitoring, electrical system diagnostics</p>
+      </div>
+
+      <!-- Power Connectors -->
+      <div class="product-card">
+        <h2>Power Connectors</h2>
+        <h3>Features:</h3>
+        <ul>
+          <li>High current capacity</li>
+          <li>Secure locking mechanisms</li>
+          <li>Weatherproof options</li>
+          <li>Various pin configurations</li>
+        </ul>
+        <h3>Applications:</h3>
+        <p>Industrial equipment, power distribution, temporary installations</p>
+      </div>
+
+      <!-- LED Lighting -->
+      <div class="product-card">
+        <h2>LED Lighting Solutions</h2>
+        <h3>Features:</h3>
+        <ul>
+          <li>Energy efficient</li>
+          <li>Long lifespan</li>
+          <li>Various color temperatures</li>
+          <li>Industrial-grade fixtures</li>
+        </ul>
+        <h3>Applications:</h3>
+        <p>Commercial lighting, industrial facilities, outdoor lighting</p>
+      </div>
+
+      <!-- Pumps -->
+      <div class="product-card">
+        <h2>Pumps</h2>
+        <h3>Features:</h3>
+        <ul>
+          <li>Various capacities</li>
+          <li>Energy efficient motors</li>
+          <li>Corrosion resistant materials</li>
+          <li>Low maintenance designs</li>
+        </ul>
+        <h3>Applications:</h3>
+        <p>Water supply, industrial processes, HVAC systems</p>
+      </div>
+    
+
+    <div class="product-card" style="grid-column: 1/-1; text-align: center;">
+      <h2>Custom Engineering Solutions</h2>
+      <p>We supply engineering and mechanical products as per customer requests and desired brands.</p>
+    </div>
+
+    
+  </div>
+</body>
+</html>

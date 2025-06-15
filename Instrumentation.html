@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Instrumentation Products - Cosmic Impex</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Outfit', sans-serif;
+      background: #f7f9fb;
+      color: #333;
+      line-height: 1.6;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+      background-image: url('Instrumentation-and-Electrical-Equipment.jpg');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      position: relative;
+    }
+    .container::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(247, 249, 251, 0.85);
+      z-index: 0;
+    }
+    .container > * {
+      position: relative;
+      z-index: 1;
+    }
+    header {
+      background: #FFFFFF;
+      padding: 20px 50px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    }
+    .logo img {
+      height: 80px;
+    }
+    h1 {
+      color: #CF0F47;
+      text-align: center;
+      margin: 40px 0;
+      font-size: 36px;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+    }
+    h2 {
+      color: #CF0F47;
+      margin: 30px 0 15px;
+      font-size: 28px;
+    }
+    h3 {
+      color: #CF0F47;
+      margin: 25px 0 10px;
+      font-size: 22px;
+    }
+    .product-card {
+      background: white;
+      border-radius: 8px;
+      padding: 25px;
+      margin-bottom: 30px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+      gap: 30px;
+      margin-top: 40px;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    li {
+      margin-bottom: 8px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 15px 0;
+    }
+    th, td {
+      padding: 12px;
+      text-align: left;
+      border-bottom: 1px solid #eee;
+    }
+    .contact-info {
+      background: #FFDEDE;
+      padding: 30px;
+      border-radius: 8px;
+      margin-top: 50px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="https://i.ibb.co/pr278jXK/no-bg-small-logo.png" alt="Cosmic Impex Enterprises Logo">
+    </div>
+    <nav>
+      <a href="index.html">← Back to Home</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h1>Instrumentation Products</h1>
+    <p style="text-align: center; max-width: 800px; margin: 0 auto 30px; background: rgba(255,255,255,0.8); padding: 15px; border-radius: 8px;">
+      We offer a complete range of Control Valves, Pressure, Flow & Temperature Transmitters from leading global brands.
+    </p>
+    </div>
+    <div class="product-grid">
+      <!-- Pressure Instruments -->
+      <div class="product-card">
+        <h2>Pressure Instruments</h2>
+        <h3>Products Include:</h3>
+        <ul>
+          <li>Pressure sensors</li>
+          <li>Pressure gauges</li>
+          <li>Pressure indicators</li>
+          <li>Pressure calibrators</li>
+        </ul>
+        <h3>Features:</h3>
+        <ul>
+          <li>High accuracy measurements</li>
+          <li>Various pressure ranges available</li>
+          <li>Robust industrial designs</li>
+          <li>Digital and analog options</li>
+        </ul>
+      </div>
+
+      <!-- CO2, Humidity & Temperature -->
+      <div class="product-card">
+        <h2>CO2, Humidity & Temperature</h2>
+        <h3>Products Include:</h3>
+        <ul>
+          <li>CO2 transmitters</li>
+          <li>Humidity transmitters</li>
+          <li>Temperature transmitters</li>
+        </ul>
+        <h3>Features:</h3>
+        <ul>
+          <li>Precise environmental monitoring</li>
+          <li>Wide measurement ranges</li>
+          <li>Multiple output signals</li>
+          <li>IP-rated enclosures</li>
+        </ul>
+      </div>
+
+      <!-- Flow Meters -->
+      <div class="product-card">
+        <h2>Flow Meters</h2>
+        <h3>Products Include:</h3>
+        <ul>
+          <li>Differential pressure flow-meters</li>
+          <li>Various flow measurement technologies</li>
+        </ul>
+        <h3>Features:</h3>
+        <ul>
+          <li>Accurate flow measurement</li>
+          <li>Low maintenance</li>
+          <li>Suitable for various media</li>
+          <li>Digital display options</li>
+        </ul>
+      </div>
+
+      <!-- Control Valves -->
+      <div class="product-card">
+        <h2>Control Valves</h2>
+        <h3>Products Include:</h3>
+        <ul>
+          <li>Electric control valves</li>
+          <li>Butterfly valves</li>
+          <li>Solenoid valves</li>
+        </ul>
+        <h3>Features:</h3>
+        <ul>
+          <li>Precise flow control</li>
+          <li>Various sizes and materials</li>
+          <li>Manual and automated options</li>
+          <li>High durability</li>
+        </ul>
+      </div>
+    
+
+    <div class="product-card" style="grid-column: 1/-1; text-align: center;">
+      <h2>We Provide Products From Leading Brands</h2>
+      <p>Including Fisher, Danfoss, Rotex, Spirax-Sarco, Bieri, Schubert-Salzer, Kobold and many others</p>
+    </div>
+
+    
+  </div>
+</body>
+</html>

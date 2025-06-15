@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content=" leap impex llp - Leading supplier of industrial solutions including adhesive tapes, automation systems, and electrical components. Serving global clients since 2014. Leap impex LLp">
+  <meta name="keywords" content="adhesive tapes, industrial supplies, automation systems, electrical components, Cosmic Impex, Leap impex llp">
+  <meta name="author" content=" leap impex llp">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content=" leap impex llp | Industrial Solutions Provider">
+  <meta property="og:description" content="Supplier of adhesive tapes, automation systems, and electrical components for global industries.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.leapimpex.com">
+  <meta property="og:image" content="https://www.leapimpex.com/images/og-image.jpg">
+  <title>Leap Impex LLP | Industrial Solutions & Adhesive Tapes Supplier</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600&display=swap" as="style">
+<link rel="preload" href="/images/hero-bg.jpg" as="image">
+<script defer src="scripts.js"></script>
+
+  <style>
+
+    /* Overall color css used to match the theme */
+    :root {
+  --primary-color: #0b7914;
+  --secondary-color: #f7f9fb;
+  --text-color: #333;
+  --white: #FFFFFF;
+  --shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+ /* hero section css take effect */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* overall font css */
+body {
+  font-family: 'Outfit', sans-serif;
+  background: var(--secondary-color);
+  color: var(--text-color);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+.container {
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+ 
+html {
+  font-size: 14px;
+  scroll-behavior: smooth;
+}
+    header {
+      background: #FFFFFF;
+      padding: 20px 50px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+      z-index: 10;
+      position: relative;
+    }
+
+    /* logo and nav bar */
+    .logo {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.former-name {
+  font-size: 0.85rem;
+  color: #666;
+  font-style: italic;
+  margin-top: 2px;
+  line-height: 1.2;
+}
+
+@media (max-width: 768px) {
+  .logo {
+    align-items: center;
+  }
+  .former-name {
+    font-size: 0.6rem;
+    text-align: center;
+  }
+}
+    .logo img {
+      height: 80px;
+      opacity: 0;
+      transform: translateX(-50px);
+      animation: slideInLogo 1s ease-out forwards;
+    }
+    @keyframes slideInLogo {
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+    
+
+
+    .nav {
+      position: relative;
+      display: flex;
+      align-items: center;
+    }
+    .nav-indicator {
+      position: absolute;
+      bottom: 0;
+      height: 3px;
+      background: #0b7914;
+      transition: all 0.3s ease;
+      border-radius: 2px;
+      transform: translateX(0);
+      width: 0;
+    }
+    nav a, nav .dropdown {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #333;
+      font-size: 20px;
+      position: relative;
+    }
+    nav a:hover {
+      color: #CF0F47;
+    }
+    nav .dropdown a#product-button {
+      cursor: pointer;
+    }
+    nav .dropdown-content a {
+      font-size: 18px;
+      padding: 12px 16px;
+      display: block;
+      color: #333;
+      text-decoration: none;
+    }
+    nav .dropdown-content a:hover {
+      background-color: #f1f1f1;
+      color: #0b7914;
+    }
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: white;
+      min-width: 180px;
+      box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+      border-radius: 8px;
+      z-index: 1000;
+    }
+
+    /* hero section css */
+    .hero {
+      position: relative;
+      text-align: center;
+      padding: 60px 20px;
+      overflow: hidden;
+      height: 70vh;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .hero video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -2;
+    }
+    .hero::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: -1;
+    }
+    .hero h1 {
+      font-size: 42px;
+      margin-bottom: 20px;
+      z-index: 1;
+      font-weight: 600;
+    }
+    .hero h2 {
+      font-size: 24px;
+      margin-bottom: 20px;
+      z-index: 1;
+      font-weight: 500;
+    }
+    .hero p {
+      font-size: 18px;
+      margin-bottom: 30px;
+      color: #f1f1f1;
+      z-index: 1;
+    }
+    .hero button {
+      background: #0b7914;
+      color: white;
+      padding: 12px 28px;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      z-index: 1;
+      font-weight: 600;
+    }
+    .hero button:hover {
+      background: #0b7914;
+    }
+
+    /* solutions section css */
+    .solutions {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 50px 20px;
+      background: #f7f9fb;
+      overflow: hidden;
+    }
+   
+    .solutions h2 {
+      font-size: 36px;
+      color: #0b7914;
+      margin-bottom: 40px;
+    }
+    .solution-wrapper {
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: center;
+      gap: 20px;
+      overflow-x: auto;
+      overflow-y: hidden;
+      padding-bottom: 20px;
+    }
+    .solution {
+      flex: 0 0 300px;
+      padding: 20px;
+      text-align: center;
+      border: 1px solid #eee;
+      border-radius: 10px;
+      background: #5e8161;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .solution:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    }
+    .solution h3 {
+      margin-bottom: 15px;
+      color: #f8f7f7;
+      font-weight: 600;
+      font-size: 25px;
+    }
+
+    .solution p{
+      color: #f1f1f1;
+      background-color: #77777773;
+      font-weight: bolder;
+    }
+
+    /* why cosmic css */
+    .why-cosmic {
+      padding: 60px 20px;
+      background: #a1c4a4;
+      text-align: center;
+    }
+    .why-cosmic h2 {
+      font-size: 36px;
+      color: #0b7914;
+      margin-bottom: 20px;
+    }
+
+    .why-cosmic h3 {
+      font-size: 20px;
+      color: #0b7914;
+      margin-bottom: 20px;
+    }
+
+    .why-cosmic p {
+      max-width: 900px;
+      margin: 0 auto;
+      font-size: 18px;
+      line-height: 1.6;
+    }
+   /* universal css  */
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      background: #f1f1f1;
+      font-size: 14px;
+      color: #777;
+    }
+    h3, h2 {
+      text-decoration: underline;
+    }
+
+
+    /* product css */
+    .products {
+      background: #a1c4a4;
+      text-align: center;
+      padding: 50px 20px;
+    }
+    .products h2 {
+      font-size: 36px;
+      color: #0b7914;
+      margin-bottom: 40px;
+      text-decoration: underline;
+    }
+
+    /* Carousel css */
+    .carousel-track {
+      display: flex;
+      transition: transform 0.5s ease;
+    }
+    .carousel-item {
+      flex: 0 0 300px;
+      margin: 0 20px;
+      background: #fafafa;
+      padding: 30px;
+      border-radius: 10px;
+      font-size: 24px;
+      font-weight: 600;
+      color: #0b7914;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      
+    }
+    .carousel-controls {
+  margin-top: 20px;
+  text-align: center;
+}
+.carousel-controls button {
+  background: #0b7914;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: 'Outfit', sans-serif;
+  margin: 0 5px;
+}
+.carousel-controls button:hover {
+  background: #a80d3b;
+}
+
+.carousel-container {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  background: #0b7914;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.carousel-btn:hover {
+  background: #0b7914;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease;
+  padding: 0 50px; /* Add padding to prevent buttons overlapping items */
+}
+ 
+
+ /* dialog css */
+.welcome-dialog {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.7);
+  z-index: 1000;
+  justify-content: center;
+  align-items: center;
+}
+
+.dialog-content {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 400px;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+}
+
+.dialog-content h3 {
+  color: #0b7914;
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+}
+
+.dialog-content p {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+#close-dialog {
+  background: #0b7914;
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+#close-dialog:hover {
+  background: #a80d3b;
+}
+ 
+.hamburger {
+  display: none;
+  font-size: 28px;
+  background: none;
+  border: none;
+  color: #0b7914;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    z-index: 999;
+  }
+
+  .nav {
+    position: absolute;
+    top: 80px;
+    right: 0;
+    background: white;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    display: none;
+    padding: 20px;
+    box-shadow: var(--shadow);
+  }
+
+  .nav.active {
+    display: flex;
+  }
+
+  .nav a, .nav .dropdown {
+    margin: 10px 0;
+  }
+}
+
+  </style>
+</head>
+
+<body>
+  <header  itemscope itemtype="https://schema.org/Organization">
+    <div class="logo">
+      <img src="leap header logo.png" alt="Leap impex LLP Logo" itemprop="logo">
+      <div class="former-name">powered by Cosmic Impex Enterprises</div>
+    </div>
+    <button class="hamburger" id="hamburger">&#9776;</button>
+
+
+    <nav class="nav">
+      <a href="#why-Leap">Why Leap?</a>
+      <a href="#solutions">Solutions</a>
+      <div class="dropdown">
+        <a href="#products" id="product-button">Products ▾</a>
+        <div class="dropdown-content" id="product-dropdown">
+          <a href="adhesive-tapes.html">Adhesive Tapes</a>  
+          <a href="Automation.html">Automation</a>
+          <a href="Instrumentation.html">Instrumentation</a>
+          <a href="electrical.html">Electrical</a>
+          <a href="civil.html">Civil</a>
+        </div>
+      </div>
+      <a href="#contact">Contact Us</a>
+      <div class="nav-indicator"></div>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <video autoplay muted loop playsinline>
+      <source src="88235-602915735_small.mp4" type="video/mp4">
+      
+    </video>
+    <h1 style="text-decoration: underline;">Leap Impex LLP</h1>
+    <h2 style="text-decoration: underline;">Choose Possibility In Every Direction </h2>
+    <p>Welcome to Leap — your one-stop destination for comprehensive industrial solutions including consulting, 
+        sourcing, exports, and sales services. We specialize in delivering top-tier products such as automation systems,
+         instrumentation tools, electrical components, civil materials, and a wide variety of adhesive tapes,
+         all tailored to support and streamline your business operations.</p>
+      </section>
+
+  <section id="why-Leap" class="why-cosmic">
+    <h2>Why Leap?</h2>
+    <h3>At Cosmic Impex Enterprises, we simplify global trade with end-to-end solutions tailored to your needs</h3>
+
+      <p>▶ One Stop Sourcing: From industrial automation to adhesive tapes, we supply high-quality products evrytime</p>
+      <p>▶ Reliable Logistics: Timely freight and export services to ensure your projects stay on schedule.</p>
+      
+            
+      <p>▶ Expert Consultancy: Strategic guidance to optimize procurement, costs, and lead times.</p>
+      
+      <p>▶ Fast Delivery : Timely shipments to keep your projects on track</p>
+      
+      
+     <p>▶ Trusted Network: Strong partnerships with manufacturers and suppliers worldwide for competitive pricing.</p>
+      
+      <p>▶ Customer-Centric: Dedicated support from sourcing to delivery, making trade seamless.</p>
+      
+        <p>▶ Global Reach: Serving clients across India and beyond, with a focus on quality and service.</p>
+  </section>
+
+  <section id="solutions" class="solutions">
+    
+    <h2>Solutions</h2>
+    
+    <div class="solution-wrapper">
+      <div class="solution" style="background-image: url('consulting.jpg');  background-size: cover;">
+       <h3>Consulting</h3>
+        <p >Selecting the most ideal plan for your project and determining the best possible lead time to the procure data and products for you.</p>
+     </div>      
+      <div class="solution" style="background-image: url('sourcing.jpg');  background-size: cover;">
+        <h3>Manufacturing/Sourcing</h3>
+        <p>We make sincere efforts to deliver your desired products to you with desired specification and within given amount of time  for your crucial need.</p>
+      </div>
+      <div class="solution" style="background-image: url('frieght.jpg');  background-size: cover;">
+        <h3>Freights and Exports</h3>
+        <p>We understand your urgency and the time frame to get the good delivered at your end.</p>
+      </div>
+      <div class="solution" style="background-image: url('Difference-between-customer-service-and-sales-1-1.jpg');  background-size: cover;">
+        <h3>Sales and services</h3>
+        <p>A seamless blend of top-notch sales expertise and exceptional service, ensuring customer satisfaction and long-term success.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="products" class="products" itemscope itemtype="https://schema.org/Product">
+    <h2>Products</h2>
+    <div class="carousel-container">
+      <button class="carousel-btn prev" aria-label="Previous">❮</button>
+      <div class="carousel-track">
+    <div class="carousel-track">
+      <div class="carousel-item adhesive-tapes">
+        <h3 itemprop="name">Adhesive Tapes</h3>
+        <p itemprop="description">We offer a huge variety of adhesive tapes suitable for industrial, electrical, and packaging applications with reliable bonding strength.          
+          </p>
+        <meta itemprop="category" content="Industrial Supplies">
+      </div>
+<div class="carousel-item automation">
+        <h3>Automation</h3>
+        <p>
+          High-end automation solutions including PLCs, drives, and HMIs from top brands like Siemens and Schneider.</p>
+      </div>
+      <div class="carousel-item instrumentation">
+        <h3>Instrumentation</h3>
+        <p>
+          Precise and reliable instrumentation equipment for process industries, ensuring accurate measurements and control.</p>
+      </div>
+      <div class="carousel-item electrical">
+      <h3>Electrical</h3>
+        <p>
+          Wide range of electrical goods including cables, switchgears, and panels to power your operations reliably.</p>
+        
+      </div>
+      <div class="carousel-item civil">
+        <h3>Civil</h3>
+        <p>
+          Top quality civil materials, construction chemicals, and equipment to build resilient infrastructures.</p>
+       
+      </div>
+    </div>
+  </div>
+  <button class="carousel-btn next" aria-label="Next">❯</button>
+</div>
+  </section>
+<!-- Add this before your </body> tag or in the contact section -->
+<section id="contact" class="contact" style="background: #f7f9fb; padding: 60px 20px; text-align: center;">
+  <h2 style="font-size: 36px; color: #0b7914; margin-bottom: 40px;">CONTACT US</h2>
+  
+  <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 40px; max-width: 1200px; margin: 0 auto;">
+    <!-- Contact Info -->
+    <div class="contact-info" style="flex: 1; min-width: 300px; text-align: left;">
+      <h3 style="color: #0b7914; font-size: 24px; margin-bottom: 20px;">Contact Details</h3>
+      <p style="font-size: 18px; margin-bottom: 15px;">
+        <strong>Phone:</strong><br>
+        +91-9860609733<br>
+        +91-8698740203
+      </p>
+      <p style="font-size: 18px;">
+        <strong>Email:</strong><br>
+        cosmicimpexent@gmail.com      
+      </p>
+      <p style="font-size: 18px;"> 
+        <Strong>Address:</Strong><br>
+        Plot NO.104/B, Ahbab Colony,Katol road, <br>
+        Nagpur-440013, Maharashtra, India.
+      </p>
+    </div>
+
+    <!-- Contact Form -->
+    <div class="contact-form" style="flex: 1; min-width: 300px; background: white; padding: 30px; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+      <h3 style="color: #0b7914; font-size: 24px; margin-bottom: 20px;">SEND US A MESSAGE</h3>
+      <form action="https://formspree.io/f/xkgrevgd" method="POST">
+        <div style="display: flex; flex-wrap: wrap; gap: 15px; margin-bottom: 15px;">
+          <input type="text" name="company" placeholder="Company Name*" required>
+          <input type="tel" name="phone" placeholder="Mobile*" required>
+        </div>
+        <div style="display: flex; flex-wrap: wrap; gap: 15px; margin-bottom: 15px;">
+          <input type="text" name="contact_person" placeholder="Person Name*" required>
+          <input type="email" name="email" placeholder="Email*" required>
+        </div>
+        <div style="display: flex; flex-wrap: wrap; gap: 15px; margin-bottom: 15px;">
+          <input type="text" name="city" placeholder="City*" required>
+          <input type="text" name="country" placeholder="Country*" required>
+        </div>
+        <textarea name="message" placeholder="Query*" required style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 8px; min-height: 100px; margin-bottom: 20px;"></textarea>
+        <button type="submit">SUBMIT</button>
+      </form>
+    </div>
+  </div>
+</section>
+  <footer>
+    &copy; 2025 Cosmic. All rights reserved.
+  </footer>
+
+
+
+<!-- Java script starts here -->
+  <script>
+    const btn = document.querySelector('.hero button');
+    if (btn) {
+      btn.addEventListener('click', () => {
+        alert('Sign up process will start soon!');
+      });
+    }
+
+    const productButton = document.getElementById('product-button');
+    const productDropdown = document.getElementById('product-dropdown');
+
+    if (productButton && productDropdown) {
+      productButton.addEventListener('click', (e) => {
+        e.preventDefault();
+        productDropdown.style.display = (productDropdown.style.display === 'block') ? 'none' : 'block';
+      });
+
+      document.addEventListener('click', (e) => {
+        if (!productButton.contains(e.target) && !productDropdown.contains(e.target)) {
+          productDropdown.style.display = 'none';
+        }
+      });
+
+      const indicator = document.querySelector('.nav-indicator');
+      const nav = document.querySelector('.nav');
+      const navLinks = nav.querySelectorAll('a:not(#product-button)');
+
+      navLinks.forEach(link => {
+        link.addEventListener('mouseenter', () => {
+          const linkRect = link.getBoundingClientRect();
+          const navRect = nav.getBoundingClientRect();
+          indicator.style.width = `${linkRect.width}px`;
+          indicator.style.left = `${linkRect.left - navRect.left}px`;
+        });
+      });
+
+      nav.addEventListener('mouseleave', () => {
+        indicator.style.width = '0';
+      });
+
+      const track = document.querySelector('.carousel-track');
+const items = document.querySelectorAll('.carousel-item');
+const prevBtn = document.querySelector('.carousel-btn.prev');
+const nextBtn = document.querySelector('.carousel-btn.next');
+let index = 0;
+let autoScrollInterval;
+
+function updateCarousel() {
+  const itemWidth = items[0].offsetWidth;
+  const offset = -(itemWidth * index);
+  track.style.transform = `translateX(${offset}px)`;
+}
+
+function startAutoScroll() {
+  autoScrollInterval = setInterval(() => {
+    index = (index + 1) % items.length;
+    updateCarousel();
+  }, 3000);
+}
+
+function stopAutoScroll() {
+  clearInterval(autoScrollInterval);
+}
+
+// Initialize
+startAutoScroll();
+
+// Button controls
+nextBtn.addEventListener('click', () => {
+  stopAutoScroll();
+  index = (index + 1) % items.length;
+  updateCarousel();
+  startAutoScroll();
+});
+
+prevBtn.addEventListener('click', () => {
+  stopAutoScroll();
+  index = (index - 1 + items.length) % items.length;
+  updateCarousel();
+  startAutoScroll();
+});
+
+// Pause on hover
+track.addEventListener('mouseenter', stopAutoScroll);
+track.addEventListener('mouseleave', startAutoScroll);
+
+    }
+    // Show dialog when page loads
+document.addEventListener('DOMContentLoaded', function() {
+  const dialog = document.getElementById('welcome-dialog');
+  dialog.style.display = 'flex';
+  
+  // Close dialog when button clicked
+  document.getElementById('close-dialog').addEventListener('click', function() {
+    dialog.style.display = 'none';
+  });
+  
+  // Optional: Close when clicking outside dialog
+  dialog.addEventListener('click', function(e) {
+    if (e.target === dialog) {
+      dialog.style.display = 'none';
+    }
+  });
+});
+
+document.getElementById('hamburger').addEventListener('click', function () {
+  document.querySelector('.nav').classList.toggle('active');
+});
+
+  </script>
+
+  <!-- <div id="welcome-dialog" class="welcome-dialog">
+    <div class="dialog-content">
+      <h3>Welcome to COSMIC IMPEX ENTERPRISES</h3>
+      <p>Formerly Known as LEAP IMPEX LLP</p>
+      <button id="close-dialog">OK</button>
+    </div>
+  </div> -->
+
+  
+</body>
+</html>
